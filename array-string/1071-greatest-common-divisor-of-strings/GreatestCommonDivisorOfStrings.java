@@ -42,25 +42,24 @@ public class GreatestCommonDivisorOfStrings {
     }
 
     // ---------------------------------------------------------------
-    // Quick self-test (run: java GreatestCommonDivisorOfStrings.java —
-    // Java 25 runs single-file sources directly, no compile step).
+    // Quick self-test (run: java GreatestCommonDivisorOfStrings.java).
+    // Java 25 instance main (JEP 512): no public/static/args needed,
+    // and solution methods are callable directly — no `new` required.
     // ---------------------------------------------------------------
-    public static void main(String[] args) {
-        var solution = new GreatestCommonDivisorOfStrings();
-
+    void main() {
         // Example 1: ABCABC = ABC×2, ABC = ABC×1 → "ABC"
-        System.out.println(solution.gcdOfStrings("ABCABC", "ABC"));     // ABC
+        System.out.println(gcdOfStrings("ABCABC", "ABC"));     // ABC
 
         // Example 2: ABABAB = AB×3, ABAB = AB×2 → "AB"
-        System.out.println(solution.gcdOfStrings("ABABAB", "ABAB"));    // AB
+        System.out.println(gcdOfStrings("ABABAB", "ABAB"));    // AB
 
         // Example 3: no common block → ""
-        System.out.println(solution.gcdOfStrings("LEET", "CODE"));      // (empty)
+        System.out.println(gcdOfStrings("LEET", "CODE"));      // (empty)
 
         // Block longer than one repetition: ABAABA = ABA×2 → "ABA"
-        System.out.println(solution.gcdOfStrings("ABAABA", "ABA"));     // ABA
+        System.out.println(gcdOfStrings("ABAABA", "ABA"));     // ABA
 
         // Identical strings → the string itself
-        System.out.println(solution.gcdOfStrings("AAAA", "AAAA"));      // AAAA
+        System.out.println(gcdOfStrings("AAAA", "AAAA"));      // AAAA
     }
 }

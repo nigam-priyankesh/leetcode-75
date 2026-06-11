@@ -43,19 +43,18 @@ public class MaximumAverageSubarray {
     }
 
     // ---------------------------------------------------------------
-    // Quick self-test (run: java MaximumAverageSubarray.java — Java 25
-    // runs single-file sources directly, no separate compile step).
+    // Quick self-test (run: java MaximumAverageSubarray.java).
+    // Java 25 instance main (JEP 512): no public/static/args needed,
+    // and solution methods are callable directly — no `new` required.
     // ---------------------------------------------------------------
-    public static void main(String[] args) {
-        var solution = new MaximumAverageSubarray();
-
+    void main() {
         // Example 1: best window is [12, -5, -6, 50] → 51 / 4 = 12.75
-        System.out.println(solution.findMaxAverage(new int[]{1, 12, -5, -6, 50, 3}, 4)); // 12.75
+        System.out.println(findMaxAverage(new int[]{1, 12, -5, -6, 50, 3}, 4)); // 12.75
 
         // Example 2: single element array
-        System.out.println(solution.findMaxAverage(new int[]{5}, 1));                    // 5.0
+        System.out.println(findMaxAverage(new int[]{5}, 1));                    // 5.0
 
         // Edge case: all negatives — max average is the "least negative" window
-        System.out.println(solution.findMaxAverage(new int[]{-1, -2, -3, -4}, 2));       // -1.5
+        System.out.println(findMaxAverage(new int[]{-1, -2, -3, -4}, 2));       // -1.5
     }
 }
