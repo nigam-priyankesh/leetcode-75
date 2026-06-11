@@ -9,11 +9,12 @@ This repository contains my solutions to the **LeetCode 75** study plan — a cu
 - 💡 **Tips and tricks** on recognizing and applying common patterns
 - ⏱️ Time and space complexity analysis for every solution
 
-## Solved so far (2/75)
+## Solved so far (3/75)
 
 | # | Problem | Pattern | Solution | Explanation |
 |---|---|---|---|---|
 | 643 | Maximum Average Subarray I | Sliding Window | [Java](sliding-window/643-maximum-average-subarray-i/MaximumAverageSubarray.java) | [Notes](sliding-window/643-maximum-average-subarray-i/EXPLANATION.md) |
+| 875 | Koko Eating Bananas | Binary Search | [Java](binary-search/875-koko-eating-bananas/KokoEatingBananas.java) | [Notes](binary-search/875-koko-eating-bananas/EXPLANATION.md) |
 | 1071 | Greatest Common Divisor of Strings | Array / String | [Java](array-string/1071-greatest-common-divisor-of-strings/GreatestCommonDivisorOfStrings.java) | [Notes](array-string/1071-greatest-common-divisor-of-strings/EXPLANATION.md) |
 
 ## Repository conventions
