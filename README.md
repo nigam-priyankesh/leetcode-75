@@ -4,10 +4,24 @@ This repository contains my solutions to the **LeetCode 75** study plan — a cu
 
 ## What you'll find here
 
-- ✅ Solutions to all 75 problems, organized by topic
+- ✅ Solutions organized by topic, added one by one as I work through the plan
 - 📝 **Detailed explanations** for each solution — the intuition, the approach, and why it works
 - 💡 **Tips and tricks** on recognizing and applying common patterns
 - ⏱️ Time and space complexity analysis for every solution
+
+## Solved so far (2/75)
+
+| # | Problem | Pattern | Solution | Explanation |
+|---|---|---|---|---|
+| 643 | Maximum Average Subarray I | Sliding Window | [Java](sliding-window/643-maximum-average-subarray-i/MaximumAverageSubarray.java) | [Notes](sliding-window/643-maximum-average-subarray-i/EXPLANATION.md) |
+| 1071 | Greatest Common Divisor of Strings | Array / String | [Java](array-string/1071-greatest-common-divisor-of-strings/GreatestCommonDivisorOfStrings.java) | [Notes](array-string/1071-greatest-common-divisor-of-strings/EXPLANATION.md) |
+
+## Repository conventions
+
+Every problem lives in `<topic>/<number>-<kebab-case-title>/`, where the topic folder matches the problem's LeetCode 75 category and roman numerals in titles become lowercase letters (e.g. `...-subarray-i`). Each folder contains:
+
+- `EXPLANATION.md` — problem statement, intuition, step-by-step algorithm, complexity analysis, companies asking it, tips & tricks, and an interview script
+- `<ClassName>.java` — a self-contained Java 25 solution (named class + instance `void main()` self-test), runnable directly with `java <ClassName>.java`
 
 ## Patterns covered
 

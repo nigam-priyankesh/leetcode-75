@@ -103,7 +103,7 @@ Answer = maxSum / k = 51 / 4 = 12.75 ✅
 - Building the first window: `k` additions → `O(k)`
 - Sliding the window: `(n - k)` slides, each doing exactly **one addition, one subtraction, one comparison** → `O(n - k)`
 - Total: `O(k) + O(n - k) = O(n)` — every element is touched **exactly once** when it enters the window and **exactly once** when it leaves.
-- Compare with brute force: `O(n × k)` — for `n = 10⁵` and `k = 10⁵`, that's `10¹⁰` operations (too slow) vs. `10⁵` for sliding window.
+- Compare with brute force: `O((n − k + 1) × k)` — worst when `k ≈ n/2`: for `n = 10⁵` that's `(5×10⁴ + 1) × 5×10⁴ ≈ 2.5 × 10⁹` operations (too slow) vs. `10⁵` for sliding window. (Note: `k = n` is *not* the worst case — there's only one window then.)
 
 ### Space Complexity: **O(1)**
 - We only use three variables: `windowSum`, `maxWindowSum`, and a loop index.
