@@ -1,18 +1,15 @@
-/**
- * LeetCode 1071. Greatest Common Divisor of Strings
- *
- * Pattern : Math + String (Euclidean Algorithm)
- * Time    : O(m + n)  — dominated by building/comparing the two concatenations
- * Space   : O(m + n)  — the two temporary concatenated strings
- *
- * Key insight:
- *   Strings under concatenation behave like integers under addition.
- *   1) A common divisor string exists  IFF  str1 + str2 == str2 + str1
- *      (Lyndon–Schützenberger theorem: two strings commute under
- *      concatenation only when both are repetitions of one common block).
- *   2) When it exists, the LARGEST divisor has length gcd(m, n) — the
- *      plain integer GCD of the two lengths — so we just return that prefix.
- */
+/// LeetCode 1071. Greatest Common Divisor of Strings
+///
+/// - **Pattern**: Math + String (Euclidean Algorithm)
+/// - **Time**: O(m + n) — dominated by building/comparing the two concatenations
+/// - **Space**: O(m + n) — the two temporary concatenated strings
+///
+/// Key insight: strings under concatenation behave like integers under addition.
+/// 1. A common divisor string exists *iff* `str1 + str2 == str2 + str1`
+///    (Lyndon–Schützenberger theorem: two strings commute under
+///    concatenation only when both are repetitions of one common block).
+/// 2. When it exists, the *largest* divisor has length `gcd(m, n)` — the
+///    plain integer GCD of the two lengths — so we just return that prefix.
 public class GreatestCommonDivisorOfStrings {
 
     public String gcdOfStrings(String str1, String str2) {
@@ -31,12 +28,10 @@ public class GreatestCommonDivisorOfStrings {
         return str1.substring(0, gcdLength);
     }
 
-    /**
-     * Euclid's algorithm (~300 BC — the oldest algorithm still in use):
-     * any common divisor of (a, b) also divides a % b, so the pair can be
-     * shrunk without losing divisors until the remainder hits 0.
-     * Runs in O(log(min(a, b))) steps (Lamé's theorem).
-     */
+    /// Euclid's algorithm (~300 BC — the oldest algorithm still in use):
+    /// any common divisor of `(a, b)` also divides `a % b`, so the pair can
+    /// be shrunk without losing divisors until the remainder hits 0.
+    /// Runs in O(log(min(a, b))) steps (Lamé's theorem).
     private int gcd(int a, int b) {
         return b == 0 ? a : gcd(b, a % b);
     }
@@ -44,22 +39,22 @@ public class GreatestCommonDivisorOfStrings {
     // ---------------------------------------------------------------
     // Quick self-test (run: java GreatestCommonDivisorOfStrings.java).
     // Java 25 instance main (JEP 512): no public/static/args needed,
-    // and solution methods are callable directly — no `new` required.
+    // solution methods callable directly, IO.println for console output.
     // ---------------------------------------------------------------
     void main() {
         // Example 1: ABCABC = ABC×2, ABC = ABC×1 → "ABC"
-        System.out.println(gcdOfStrings("ABCABC", "ABC"));     // ABC
+        IO.println(gcdOfStrings("ABCABC", "ABC"));     // ABC
 
         // Example 2: ABABAB = AB×3, ABAB = AB×2 → "AB"
-        System.out.println(gcdOfStrings("ABABAB", "ABAB"));    // AB
+        IO.println(gcdOfStrings("ABABAB", "ABAB"));    // AB
 
         // Example 3: no common block → ""
-        System.out.println(gcdOfStrings("LEET", "CODE"));      // (empty)
+        IO.println(gcdOfStrings("LEET", "CODE"));      // (empty)
 
         // Block longer than one repetition: ABAABA = ABA×2 → "ABA"
-        System.out.println(gcdOfStrings("ABAABA", "ABA"));     // ABA
+        IO.println(gcdOfStrings("ABAABA", "ABA"));     // ABA
 
         // Identical strings → the string itself
-        System.out.println(gcdOfStrings("AAAA", "AAAA"));      // AAAA
+        IO.println(gcdOfStrings("AAAA", "AAAA"));      // AAAA
     }
 }

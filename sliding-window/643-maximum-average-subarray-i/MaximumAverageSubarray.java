@@ -1,16 +1,13 @@
-/**
- * LeetCode 643. Maximum Average Subarray I
- *
- * Pattern : Fixed-Size Sliding Window
- * Time    : O(n)  — each element enters the window once and leaves once
- * Space   : O(1)  — only a few scalar variables, no extra data structures
- *
- * Key insight:
- *   Maximizing the AVERAGE of a window of fixed length k is identical to
- *   maximizing its SUM (the divisor k never changes). So we track integer
- *   sums while sliding and perform exactly ONE floating-point division at
- *   the end — faster and free of accumulated rounding error.
- */
+/// LeetCode 643. Maximum Average Subarray I
+///
+/// - **Pattern**: Fixed-Size Sliding Window
+/// - **Time**: O(n) — each element enters the window once and leaves once
+/// - **Space**: O(1) — only a few scalar variables, no extra data structures
+///
+/// Key insight: maximizing the *average* of a window of fixed length `k` is
+/// identical to maximizing its *sum* (the divisor `k` never changes). So we
+/// track integer sums while sliding and perform exactly one floating-point
+/// division at the end — faster and free of accumulated rounding error.
 public class MaximumAverageSubarray {
 
     public double findMaxAverage(int[] nums, int k) {
@@ -45,16 +42,16 @@ public class MaximumAverageSubarray {
     // ---------------------------------------------------------------
     // Quick self-test (run: java MaximumAverageSubarray.java).
     // Java 25 instance main (JEP 512): no public/static/args needed,
-    // and solution methods are callable directly — no `new` required.
+    // solution methods callable directly, IO.println for console output.
     // ---------------------------------------------------------------
     void main() {
         // Example 1: best window is [12, -5, -6, 50] → 51 / 4 = 12.75
-        System.out.println(findMaxAverage(new int[]{1, 12, -5, -6, 50, 3}, 4)); // 12.75
+        IO.println(findMaxAverage(new int[]{1, 12, -5, -6, 50, 3}, 4)); // 12.75
 
         // Example 2: single element array
-        System.out.println(findMaxAverage(new int[]{5}, 1));                    // 5.0
+        IO.println(findMaxAverage(new int[]{5}, 1));                    // 5.0
 
         // Edge case: all negatives — max average is the "least negative" window
-        System.out.println(findMaxAverage(new int[]{-1, -2, -3, -4}, 2));       // -1.5
+        IO.println(findMaxAverage(new int[]{-1, -2, -3, -4}, 2));       // -1.5
     }
 }
