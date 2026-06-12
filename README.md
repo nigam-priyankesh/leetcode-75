@@ -9,12 +9,13 @@ This repository contains my solutions to the **LeetCode 75** study plan — a cu
 - 💡 **Tips and tricks** on recognizing and applying common patterns
 - ⏱️ Time and space complexity analysis for every solution
 
-## Solved so far (4/75)
+## Solved so far (5/75)
 
 | # | Problem | Pattern | Solution | Explanation |
 |---|---|---|---|---|
 | 162 | Find Peak Element | Binary Search | [Java](binary-search/162-find-peak-element/FindPeakElement.java) | [Notes](binary-search/162-find-peak-element/EXPLANATION.md) |
 | 643 | Maximum Average Subarray I | Sliding Window | [Java](sliding-window/643-maximum-average-subarray-i/MaximumAverageSubarray.java) | [Notes](sliding-window/643-maximum-average-subarray-i/EXPLANATION.md) |
+| 700 | Search in a Binary Search Tree | Binary Search Tree | [Java](binary-search-tree/700-search-in-a-binary-search-tree/SearchInBinarySearchTree.java) | [Notes](binary-search-tree/700-search-in-a-binary-search-tree/EXPLANATION.md) |
 | 875 | Koko Eating Bananas | Binary Search | [Java](binary-search/875-koko-eating-bananas/KokoEatingBananas.java) | [Notes](binary-search/875-koko-eating-bananas/EXPLANATION.md) |
 | 1071 | Greatest Common Divisor of Strings | Array / String | [Java](array-string/1071-greatest-common-divisor-of-strings/GreatestCommonDivisorOfStrings.java) | [Notes](array-string/1071-greatest-common-divisor-of-strings/EXPLANATION.md) |
 
