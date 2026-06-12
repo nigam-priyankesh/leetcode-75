@@ -9,7 +9,7 @@ This repository contains my solutions to the **LeetCode 75** study plan — a cu
 - 💡 **Tips and tricks** on recognizing and applying common patterns
 - ⏱️ Time and space complexity analysis for every solution
 
-## Solved so far (6/75)
+## Solved so far (7/75)
 
 | # | Problem | Pattern | Solution | Explanation |
 |---|---|---|---|---|
@@ -18,6 +18,7 @@ This repository contains my solutions to the **LeetCode 75** study plan — a cu
 | 700 | Search in a Binary Search Tree | Binary Search Tree | [Java](binary-search-tree/700-search-in-a-binary-search-tree/SearchInBinarySearchTree.java) | [Notes](binary-search-tree/700-search-in-a-binary-search-tree/EXPLANATION.md) |
 | 739 | Daily Temperatures | Monotonic Stack | [Java](monotonic-stack/739-daily-temperatures/DailyTemperatures.java) | [Notes](monotonic-stack/739-daily-temperatures/EXPLANATION.md) |
 | 875 | Koko Eating Bananas | Binary Search | [Java](binary-search/875-koko-eating-bananas/KokoEatingBananas.java) | [Notes](binary-search/875-koko-eating-bananas/EXPLANATION.md) |
+| 901 | Online Stock Span | Monotonic Stack | [Java](monotonic-stack/901-online-stock-span/StockSpanner.java) | [Notes](monotonic-stack/901-online-stock-span/EXPLANATION.md) |
 | 1071 | Greatest Common Divisor of Strings | Array / String | [Java](array-string/1071-greatest-common-divisor-of-strings/GreatestCommonDivisorOfStrings.java) | [Notes](array-string/1071-greatest-common-divisor-of-strings/EXPLANATION.md) |
 
 ## Repository conventions
