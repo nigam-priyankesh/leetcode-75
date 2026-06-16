@@ -9,11 +9,12 @@ This repository contains my solutions to the **LeetCode 75** study plan — a cu
 - 💡 **Tips and tricks** on recognizing and applying common patterns
 - ⏱️ Time and space complexity analysis for every solution
 
-## Solved so far (7/75)
+## Solved so far (8/75)
 
 | # | Problem | Pattern | Solution | Explanation |
 |---|---|---|---|---|
 | 162 | Find Peak Element | Binary Search | [Java](binary-search/162-find-peak-element/FindPeakElement.java) | [Notes](binary-search/162-find-peak-element/EXPLANATION.md) |
+| 328 | Odd Even Linked List | Linked List | [Java](linked-list/328-odd-even-linked-list/OddEvenLinkedList.java) | [Notes](linked-list/328-odd-even-linked-list/EXPLANATION.md) |
 | 643 | Maximum Average Subarray I | Sliding Window | [Java](sliding-window/643-maximum-average-subarray-i/MaximumAverageSubarray.java) | [Notes](sliding-window/643-maximum-average-subarray-i/EXPLANATION.md) |
 | 700 | Search in a Binary Search Tree | Binary Search Tree | [Java](binary-search-tree/700-search-in-a-binary-search-tree/SearchInBinarySearchTree.java) | [Notes](binary-search-tree/700-search-in-a-binary-search-tree/EXPLANATION.md) |
 | 739 | Daily Temperatures | Monotonic Stack | [Java](monotonic-stack/739-daily-temperatures/DailyTemperatures.java) | [Notes](monotonic-stack/739-daily-temperatures/EXPLANATION.md) |
